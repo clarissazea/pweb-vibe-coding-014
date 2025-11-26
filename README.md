@@ -204,9 +204,12 @@ Jika ingin mengembangkan fitur tambahan:
 - Input form makanan yang akan ditracking
 <img width="1826" height="1012" alt="image" src="https://github.com/user-attachments/assets/22dc17b1-c3e4-4d17-805f-1cca49f613a0" />
 
+- Fitur search
+<img width="1836" height="999" alt="image" src="https://github.com/user-attachments/assets/08ebea2f-b7d9-4e29-8119-85643773ad27" />
 
 - Menu peringatan makanan yang sudah mendekati tanggal expired!
 <img width="1846" height="1005" alt="image" src="https://github.com/user-attachments/assets/31ef511e-d426-461c-9507-973e25075bae" />
+
 
 ## 👩‍💻 Developer
 Food Inventor adalah hasil yang dibuat untuk penugasan mata kuliah Pemrograman Website 2025. Dikerjakan oleh: 
