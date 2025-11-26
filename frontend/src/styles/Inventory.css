@@ -1,0 +1,219 @@
+/* src/styles/Inventory.css */
+
+/* --- Food Card --- */
+.food-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+.food-card:hover {
+    transform: scale(1.02);
+}
+
+.food-status-bar {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-status { margin-right: 4px; }
+
+.status-expired { background-color: var(--danger-red); }
+.status-soon { background-color: var(--warning-orange); }
+.status-safe { background-color: #10b981; /* Mirip green-500 */ }
+
+.food-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.food-content {
+    padding: 16px;
+    flex-grow: 1;
+}
+.food-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.food-quantity {
+    color: #4b5563; /* gray-600 */
+    margin-bottom: 12px;
+}
+.food-quantity-value {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-tosca);
+}
+.food-expiry-date { font-size: 14px; color: #6b7280; }
+.food-expiry-value { font-weight: 500; }
+
+.food-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.btn-edit, .btn-delete {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.icon-action { margin-right: 8px; }
+
+.btn-edit {
+    background-color: var(--color-blue-action);
+    color: white;
+}
+.btn-edit:hover { background-color: #2563eb; }
+
+.btn-delete {
+    background-color: var(--color-gray-action);
+    color: var(--text-dark);
+}
+.btn-delete:hover { background-color: #9ca3af; }
+
+/* --- Dashboard Layout --- */
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+.grid-full {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #6b7280;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.warning-section {
+    background-color: #fffbeb; /* Mirip yellow-50 */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--warning-orange);
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.empty-message { color: #4b5563; }
+
+/* --- Form --- */
+.inventory-form-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--primary-tosca);
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.inventory-form-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.icon-title-form { margin-right: 12px; color: var(--primary-tosca); }
+
+.form-grid { display: flex; flex-direction: column; gap: 16px; }
+
+.input-group, .input-group-split {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .input-group { grid-template-columns: 1fr 1fr; }
+    .input-group-split { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.form-input, .form-select {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 100%;
+}
+.form-select { background-color: white; }
+
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.file-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 4px;
+}
+.form-file {
+    font-size: 14px;
+}
+
+.form-actions { display: flex; gap: 12px; padding-top: 8px; }
+
+.btn-submit, .btn-cancel {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit {
+    background-color: var(--primary-tosca);
+    color: white;
+}
+.btn-submit:hover { background-color: var(--secondary-blue); }
+
+.btn-cancel {
+    background-color: var(--color-gray-action);
+    color: var(--text-dark);
+}
+.btn-cancel:hover { background-color: #9ca3af; }
+
+/* --- Filter --- */
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.icon-filter { color: #4b5563; }
+.filter-select {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+}

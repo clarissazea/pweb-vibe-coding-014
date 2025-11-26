@@ -1,0 +1,84 @@
+/* src/styles/Auth.css */
+
+.auth-page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, var(--primary-tosca), #3b82f6);
+    padding: 16px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 448px; /* Mirip max-w-md */
+}
+
+.auth-form {
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-title { margin-right: 12px; }
+
+.auth-error { font-size: 14px; color: var(--danger-red); font-weight: 500; text-align: center; }
+.auth-success { font-size: 14px; color: var(--primary-tosca); font-weight: 500; text-align: center; }
+
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+.auth-input:focus {
+    outline: none;
+    border-color: var(--primary-tosca);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .primary-color { color: var(--primary-tosca); }
+.login-form .primary-bg { background-color: var(--primary-tosca); }
+.login-form .primary-bg:hover { background-color: #167e6c; }
+
+.register-form .secondary-color { color: var(--secondary-blue); }
+.register-form .secondary-bg { background-color: var(--secondary-blue); }
+.register-form .secondary-bg:hover { background-color: #3aa8bf; }
+
+.auth-switch-button {
+    text-align: center;
+    font-size: 14px;
+    color: #4b5563; /* gray-600 */
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.auth-switch-button:hover {
+    text-decoration: underline;
+}
