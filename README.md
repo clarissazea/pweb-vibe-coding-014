@@ -1,5 +1,5 @@
 
-<h1 align="center">🍎 Food Inventory</h1>
+<h1 align="center">🍎** Food Inventory</h1>**
 <p align="center">Aplikasi Manajemen Stok Makanan Cerdas Berbasis Web (MERN Stack)</p>
 
 
