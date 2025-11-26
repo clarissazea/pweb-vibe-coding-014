@@ -31,7 +31,17 @@ Dalam pengelolaan kebutuhan rumah tangga atau usaha kuliner kecil, seringkali te
 3.  **Pencatatan Manual:** Metode mencatat di kertas atau mengingat-ingat stok sangat rentan lupa dan tidak efisien.
 
 ```
-Selain masalah umum di atas, aplikasi ini juga sangat relevan untuk anak kost atau individu yang menggunakan dapur bersama. Dalam lingkungan tersebut, sering terjadi kebingungan mengenai barang milik pribadi dan tanggal kedaluwarsa barang tersebut, yang memicu hilangnya item atau penggunaan item oleh orang yang salah. Aplikasi ini memecahkan masalah pelacakan kepemilikan dan masa simpan dalam ruang berbagi.
+> Selain masalah umum di atas, aplikasi ini juga sangat relevan  
+> untuk anak kost atau individu yang menggunakan dapur bersama.  
+>  
+> Dalam lingkungan tersebut, sering terjadi kebingungan  
+> mengenai barang milik pribadi dan tanggal kedaluwarsa  
+> barang tersebut, yang memicu hilangnya item atau  
+> penggunaan item oleh orang yang salah.  
+>  
+> Aplikasi ini memecahkan masalah pelacakan kepemilikan  
+> dan masa simpan dalam ruang berbagi.
+
 ```
 ---
 
